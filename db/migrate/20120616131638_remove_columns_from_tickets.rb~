@@ -1,7 +1,0 @@
-class RemoveColumnsFromTickets < ActiveRecord::Migration
-  def up
-  end
-
-  def down
-  end
-end
