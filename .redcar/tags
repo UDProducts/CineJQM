@@ -1,7 +1,5 @@
-1340398358
-AddColumnTicketCountIdToTicket	/devel/off/ruby/rails/cinejqm/db/migrate/20120616132017_add_column_ticket_count_id_to_ticket.rb	class AddColumnTicketCountIdToTicket 
+1340399665
 AddColumnToCustomer	/devel/off/ruby/rails/cinejqm/db/migrate/20120618100230_add_column_to_customer.rb	class AddColumnToCustomer 
-AddCostToTicketcount	/devel/off/ruby/rails/cinejqm/db/migrate/20120619083743_add_cost_to_ticketcount.rb	class AddCostToTicketcount 
 Application	/devel/off/ruby/rails/cinejqm/config/application.rb	  class Application 
 ApplicationController	/devel/off/ruby/rails/cinejqm/app/controllers/application_controller.rb	class ApplicationController 
 ApplicationHelper	/devel/off/ruby/rails/cinejqm/app/helpers/application_helper.rb	module ApplicationHelper
@@ -9,16 +7,12 @@ BrowsingTest	/devel/off/ruby/rails/cinejqm/test/performance/browsing_test.rb	cla
 CineJQM	/devel/off/ruby/rails/cinejqm/config/application.rb	module CineJQM
 CreateCustomers	/devel/off/ruby/rails/cinejqm/db/migrate/20120616113148_create_customers.rb	class CreateCustomers 
 CreatePurchases	/devel/off/ruby/rails/cinejqm/db/migrate/20120622183440_create_purchases.rb	class CreatePurchases 
-CreateTableTicketCount	/devel/off/ruby/rails/cinejqm/db/migrate/20120616131259_create_table_ticket_count.rb	class CreateTableTicketCount 
-CreateTicketcounts	/devel/off/ruby/rails/cinejqm/db/migrate/20120616142924_create_ticketcounts.rb	class CreateTicketcounts 
-CreateTickets	/devel/off/ruby/rails/cinejqm/db/migrate/20120616113519_create_tickets.rb	class CreateTickets 
 Customer	/devel/off/ruby/rails/cinejqm/app/models/customer.rb	class Customer 
 CustomerTest	/devel/off/ruby/rails/cinejqm/test/unit/customer_test.rb	class CustomerTest 
 CustomersController	/devel/off/ruby/rails/cinejqm/app/controllers/customers_controller.rb	class CustomersController 
 CustomersControllerTest	/devel/off/ruby/rails/cinejqm/test/functional/customers_controller_test.rb	class CustomersControllerTest 
 CustomersHelper	/devel/off/ruby/rails/cinejqm/app/helpers/customers_helper.rb	module CustomersHelper
 CustomersHelperTest	/devel/off/ruby/rails/cinejqm/test/unit/helpers/customers_helper_test.rb	class CustomersHelperTest 
-DropTicketcounts	/devel/off/ruby/rails/cinejqm/db/migrate/20120618091952_drop_ticketcounts.rb	class DropTicketcounts 
 HomeController	/devel/off/ruby/rails/cinejqm/app/controllers/home_controller.rb	class HomeController 
 HomeControllerTest	/devel/off/ruby/rails/cinejqm/test/functional/home_controller_test.rb	class HomeControllerTest 
 HomeHelper	/devel/off/ruby/rails/cinejqm/app/helpers/home_helper.rb	module HomeHelper
@@ -29,8 +23,6 @@ PurchasesController	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_cont
 PurchasesControllerTest	/devel/off/ruby/rails/cinejqm/test/functional/purchases_controller_test.rb	class PurchasesControllerTest 
 PurchasesHelper	/devel/off/ruby/rails/cinejqm/app/helpers/purchases_helper.rb	module PurchasesHelper
 PurchasesHelperTest	/devel/off/ruby/rails/cinejqm/test/unit/helpers/purchases_helper_test.rb	class PurchasesHelperTest 
-RemoveColumnsFromTickets	/devel/off/ruby/rails/cinejqm/db/migrate/20120616131638_remove_columns_from_tickets.rb	class RemoveColumnsFromTickets 
-RenameTicketcount	/devel/off/ruby/rails/cinejqm/db/migrate/20120618092438_rename_ticketcount.rb	class RenameTicketcount 
 TestCase	/devel/off/ruby/rails/cinejqm/test/test_helper.rb	class ActiveSupport::TestCase
 Ticket	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	class Ticket 
 TicketTest	/devel/off/ruby/rails/cinejqm/test/unit/ticket_test.rb	class TicketTest 
@@ -46,16 +38,8 @@ TicketsControllerTest	/devel/off/ruby/rails/cinejqm/test/functional/tickets_cont
 TicketsHelper	/devel/off/ruby/rails/cinejqm/app/helpers/tickets_helper.rb	module TicketsHelper
 TicketsHelperTest	/devel/off/ruby/rails/cinejqm/test/unit/helpers/tickets_helper_test.rb	class TicketsHelperTest 
 cancel	/devel/off/ruby/rails/cinejqm/app/controllers/customers_controller.rb	  def cancel
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120619083743_add_cost_to_ticketcount.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616131638_remove_columns_from_tickets.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120618092438_rename_ticketcount.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616131259_create_table_ticket_count.rb	  def change
 change	/devel/off/ruby/rails/cinejqm/db/migrate/20120618100230_add_column_to_customer.rb	  def change
 change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616113148_create_customers.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616113519_create_tickets.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616132017_add_column_ticket_count_id_to_ticket.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120616142924_create_ticketcounts.rb	  def change
-change	/devel/off/ruby/rails/cinejqm/db/migrate/20120618091952_drop_ticketcounts.rb	  def change
 change	/devel/off/ruby/rails/cinejqm/db/migrate/20120622183440_create_purchases.rb	  def change
 create	/devel/off/ruby/rails/cinejqm/app/controllers/ticketcount_controller.rb	  def create
 create	/devel/off/ruby/rails/cinejqm/app/controllers/ticketcounts_controller.rb	  def create

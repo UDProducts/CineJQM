@@ -7,11 +7,9 @@ CineJQM::Application.routes.draw do
   get "home/movie_three"
   get "home/movie_four"
   resources :tickets do
-  get :autocomplete_ticket_category, :on=>:collection
   end
   resources :customers
   resources :ticketcounts do
-  get :autocomplete_ticketcount_category, :on=>:collection
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.
