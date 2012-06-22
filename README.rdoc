@@ -2,7 +2,7 @@
 
 This is a test application for purchasing ticket using Jquery Mobile and Ruby on Rails
 
-To see the demo please visit http://cinejqm.herokuapp.com
+To see the demo please visit http://cjqm.herokuapp.com
 
 Created & maintained by UDProducts
 http://www.udproducts.in
