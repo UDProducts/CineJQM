@@ -1,5 +1,4 @@
 class TicketsController < ApplicationController
-autocomplete :ticket, :category,:column_name => 'category' ,:extra_data => [:cost]
   # GET /tickets
   # GET /tickets.json
   def index
