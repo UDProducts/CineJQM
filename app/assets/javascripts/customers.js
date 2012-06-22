@@ -18,7 +18,3 @@ $('#ticket_category').live('change',function(){
 $('div:last').bind('ajax:success', function() {  
         alert("Sure?");
     });  
-$(document).bind("mobileinit", function(){
-        $.mobile.page.prototype.options.addBackBtn= true;
-    });  
-   });

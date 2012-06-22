@@ -1,0 +1,79 @@
+--- 
+cursor_positions: 
+  - :path: app/assets/stylesheets/udp_m_app.css
+    :cursor_offset: 31192
+    :timestamp: 2012-06-22 20:19:13 +05:30
+  - :path: app/views/layouts/customer.html.erb
+    :cursor_offset: 547
+    :timestamp: 2012-06-22 22:27:13 +05:30
+  - :path: config/routes.rb
+    :cursor_offset: 149
+    :timestamp: 2012-06-22 22:37:21 +05:30
+  - :path: app/assets/stylesheets/customers.css.scss
+    :cursor_offset: 223
+    :timestamp: 2012-06-22 20:27:27 +05:30
+  - :path: app/assets/stylesheets/jqm.min.css
+    :cursor_offset: 20790
+    :timestamp: 2012-06-22 23:34:13 +05:30
+  - :path: app/views/customers/index.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 18:31:08 +05:30
+  - :path: app/assets/stylesheets/application.css
+    :cursor_offset: 523
+    :timestamp: 2012-06-22 23:33:38 +05:30
+  - :path: app/views/home/movie_three.html.erb
+    :cursor_offset: 444
+    :timestamp: 2012-06-23 01:41:39 +05:30
+  - :path: app/views/customers/_ticket_fields.html.erb
+    :cursor_offset: 262
+    :timestamp: 2012-06-22 23:31:21 +05:30
+  - :path: app/assets/stylesheets/customers.css
+    :cursor_offset: 302
+    :timestamp: 2012-06-22 23:31:10 +05:30
+  - :path: app/views/customers/_form.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 23:40:17 +05:30
+    :selection_offset: 1491
+    :block_selection_mode: false
+  - :path: app/models/ticketcount.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 18:31:08 +05:30
+  - :path: app/models/ticket.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 18:31:08 +05:30
+  - :path: app/models/customer.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 18:31:08 +05:30
+  - :path: app/controllers/tickets_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 18:31:08 +05:30
+  - :path: app/controllers/customers_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-06-22 23:45:45 +05:30
+  - :path: app/views/layouts/purchases.html.erb
+    :cursor_offset: 517
+    :timestamp: 2012-06-22 23:38:19 +05:30
+  - :path: app/views/layouts/home.html.erb
+    :cursor_offset: 535
+    :timestamp: 2012-06-22 23:37:30 +05:30
+  - :path: app/controllers/purchases_controller.rb
+    :cursor_offset: 1030
+    :timestamp: 2012-06-23 00:30:12 +05:30
+  - :path: app/views/home/index.html.erb
+    :cursor_offset: 24
+    :timestamp: 2012-06-23 01:42:27 +05:30
+  - :path: app/views/home/movie_four.html.erb
+    :cursor_offset: 462
+    :timestamp: 2012-06-23 01:42:30 +05:30
+    :selection_offset: 445
+    :block_selection_mode: false
+  - :path: app/views/home/movie_one.html.erb
+    :cursor_offset: 395
+    :timestamp: 2012-06-23 01:41:07 +05:30
+  - :path: app/views/home/movie_two.html.erb
+    :cursor_offset: 397
+    :timestamp: 2012-06-23 00:32:10 +05:30
+  - :path: app/views/purchases/_form.html.erb
+    :cursor_offset: 63
+    :timestamp: 2012-06-23 01:56:17 +05:30
+files_to_retain: 0

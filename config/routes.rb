@@ -1,5 +1,11 @@
 CineJQM::Application.routes.draw do
+  resources :purchases
+
   get "home/index"
+  get "home/movie_one"
+  get "home/movie_two"
+  get "home/movie_three"
+  get "home/movie_four"
   resources :tickets do
   get :autocomplete_ticket_category, :on=>:collection
   end

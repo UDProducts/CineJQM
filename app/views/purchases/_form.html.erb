@@ -1,0 +1,37 @@
+<%= form_for(@purchase) do |f| %>
+  <% if @purchase.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@purchase.errors.count, "error") %> prohibited this purchase from being saved:</h2>
+
+      <ul>
+      <% @purchase.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name, :placeholder => "Name" %>
+  </div>
+  <div class="field">
+    <%= f.label :email_id %><br />
+    <%= f.text_field :email_id, :placeholder => "Email"  %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.number_field :phone_number, :placeholder => "Phone"  %>
+  </div>
+  <div class="field">  
+    <label for="slider">Seats:</label>
+    <input type="range" name="purchase[seats]" id="slider" value="0" min="0" max="10" data-highlight="true" />
+  </div>
+  <fieldset class="ui-grid-a">
+  	<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
+  	<div class="ui-block-b"><%= f.submit %></div>	 
+  </fieldset>
+<% end %>
+
+   
+

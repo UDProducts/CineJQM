@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CineJQM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <script>
+    $('div[data-role=page]').live('pagecreate',function(){
+       jQuery('.ui-select, .ui-select a').css({'width':'10%'});
+    });
+    </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div data-theme="a" class="ui-page-active" data-role="page" data-add-back-btn="true" data-iconpos="bottom">
+  <div data-role="navbar">
+		<ul>
+			<li><%= link_to "Aaja Nachle", root_path, :data => { :icon => "home" } %></li>
+			<li><%= link_to "Billa 2", home_movie_one_path, :data => { :icon => "info" } %></li>
+			<li><%= link_to "Nanban", home_movie_two_path, :data => { :icon => "search" } %></li>
+			<li><%= link_to "Battle Ship", home_movie_three_path, :data => { :icon => "grid" } %></li>
+			<li><%= link_to "MIB", home_movie_four_path, :data => { :icon => "star" } %></li>
+		</ul>
+	</div>
+    <%= yield %>
+</div>
+</body>
+</html>

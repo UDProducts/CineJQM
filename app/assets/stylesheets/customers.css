@@ -10,3 +10,25 @@ opacity:1px;
 overflow :hidden;
 width:180px;
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.cost {
+  padding: 5px;
+  text-align: center;
+}
+
+.availability {
+  padding: 5px;
+  text-align: center;
+}
+
+img#Moive {
+  width: 400px;
+}

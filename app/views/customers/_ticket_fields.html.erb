@@ -1,12 +1,18 @@
 
 
-<div data-role="fieldcontain">
-<%= f.autocomplete_field :ticket_category, autocomplete_ticketcount_category_ticketcounts_path,:update_elements => { :cost => "#ticket_cost", :nooftickets =>"#ticket_count"} ,:id => "ticket_category"%>
-</br>
-    <%= f.label :cost %><br />
-    <%= f.text_field :ticket_cost, :id=> "ticket_cost" %><br />
-    Tickets available:<br />
-    <%= f.hidden_field :ticket_count,:id =>"ticket_count" %>
+<div data-role="fieldcontain" class="ui-bar ui-bar-c">
+
+  <div class="informations ui-grid-a">
+    <div class="cost left ui-btn-left ui-block-a">
+      Cost: Rs. 150
+    </div>
+    <%# f.text_field :ticket_cost, :id=> "ticket_cost" %>
+    <div class="availability right ui-btn-right ui-block-b">
+      Tickets available: 24 Seats
+    </div>
+  </div>
+    
+    <%# f.hidden_field :ticket_count,:id =>"ticket_count" %>
   
 </div>
 

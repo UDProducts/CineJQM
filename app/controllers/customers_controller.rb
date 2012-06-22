@@ -26,7 +26,6 @@ class CustomersController < ApplicationController
   # GET /customers/new.json
   def new
     @customer = Customer.new
-    @customer.tickets.build
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @customer }
@@ -41,54 +40,53 @@ class CustomersController < ApplicationController
   # POST /customers
   # POST /customers.json
   def create
-    @customer = Customer.new(params[:id])
-    @nooftickets = params[:customer][:no]+params[:slider]
-    @customer.update_attributes(:name=>params[:customer][:name],:email=>params[:customer][:email],:phone=>params[:customer][:phone],:no=>@nooftickets,:ccn=>params[:customer][:ccn])
-     
-     @tickets = params[:customer][:no]+params[:slider]
-     @length=@tickets.length
-     @nos=Integer(@tickets[1..@length])
-     @pos=@tickets[0]
-     
-     
-     @i=1
-      while @i<= @nos
-      @customer.tickets.build
-      @i=@i+1
-      end  
-      @tno=Integer(rand()*1000)
-         respond_to do |format|
-      if @customer.save
-         @j=0
-        @customer.tickets.each do |ticket|
-          @tno=@tno+1
-         
-         if @pos =="B"
-           @ticketcount=Ticketcount.find_by_category('Balcony')
-           @count=Integer(@ticketcount.nooftickets)-1
-           ticket.update_attributes(:cost=>'100',:category=>'Balcony',:tno=>@tno,:sno=>@tno)
-           @ticketcount.update_attributes(:nooftickets=>@count)
-          else if @pos == "F"
-           @ticketcount=Ticketcount.find_by_category('First')
-           @count=Integer(@ticketcount.nooftickets)-1
-           ticket.update_attributes(:cost=>'100',:category=>'First',:tno=>@tno,:sno=>@tno)
-           @ticketcount.update_attributes(:nooftickets=>@count)
-          else 
-           @ticketcount=Ticketcount.find_by_category('Second')
-           @count=Integer(@ticketcount.nooftickets)-1
-           ticket.update_attributes(:cost=>'25',:category=>'Second',:tno=>@tno,:sno=>@tno)
-           @ticketcount.update_attributes(:nooftickets=>@count)
-           end
-         end
-      end  
-
-        format.html { redirect_to @customer, notice: 'Ticket was successfully booked.' }
-        format.json { render json: @customer, status: :created, location: @customer }
-        format.js
-      else
-        format.html { render action: "new" }
-        format.json { render json: @customer.errors, status: :unprocessable_entity }
-      end
+    @customer = Customer.new(params[:customer])
+    # @nooftickets = params[:customer][:no]+params[:slider]
+    # @customer.update_attributes(:name=>params[:customer][:name],:email=>params[:customer][:email],:phone=>params[:customer][:phone],:no=>@nooftickets,:ccn=>params[:customer][:ccn])
+    #  
+    #  @tickets = params[:customer][:no]+params[:slider]
+    #  @length=@tickets.length
+    #  @nos=Integer(@tickets[1..@length])
+    #  @pos=@tickets[0]
+    #  
+    #  
+    #  @i=1
+    #   while @i<= @nos
+    #   @customer.tickets.build
+    #   @i=@i+1
+    #   end  
+    #   @tno=Integer(rand()*1000)
+    #      respond_to do |format|
+    #   if @customer.save
+    #      @j=0
+    #     @customer.tickets.each do |ticket|
+    #       @tno=@tno+1
+    #      
+    #      if @pos =="B"
+    #        @ticketcount=Ticketcount.find_by_category('Balcony')
+    #        @count=Integer(@ticketcount.nooftickets)-1
+    #        ticket.update_attributes(:cost=>'100',:category=>'Balcony',:tno=>@tno,:sno=>@tno)
+    #        @ticketcount.update_attributes(:nooftickets=>@count)
+    #       else if @pos == "F"
+    #        @ticketcount=Ticketcount.find_by_category('First')
+    #        @count=Integer(@ticketcount.nooftickets)-1
+    #        ticket.update_attributes(:cost=>'100',:category=>'First',:tno=>@tno,:sno=>@tno)
+    #        @ticketcount.update_attributes(:nooftickets=>@count)
+    #       else 
+    #        @ticketcount=Ticketcount.find_by_category('Second')
+    #        @count=Integer(@ticketcount.nooftickets)-1
+    #        ticket.update_attributes(:cost=>'25',:category=>'Second',:tno=>@tno,:sno=>@tno)
+    #        @ticketcount.update_attributes(:nooftickets=>@count)
+    #        end
+    #      end
+    #   end  
+   if @customer.save
+      format.html { redirect_to @customer, notice: 'Ticket was successfully booked.' }
+      format.json { render json: @customer, status: :created, location: @customer }
+      format.js
+    else
+      format.html { render action: "new" }
+      format.json { render json: @customer.errors, status: :unprocessable_entity }
     end
   end
 

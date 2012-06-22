@@ -1,0 +1,10 @@
+<div data-role="header">
+  <%= link_to "Home", root_path, :data => {:icon => "home"} %>
+  <h1>New Purchase</h1>
+</div>
+
+<%= render 'form' %>
+
+<div data-role="footer">
+  <%= link_to 'Owned Tickets', purchases_path %>
+</div>
