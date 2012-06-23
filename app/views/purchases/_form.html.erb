@@ -12,15 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
     <%= f.text_field :name, :placeholder => "Name" %>
   </div>
   <div class="field">
-    <%= f.label :email_id %><br />
     <%= f.text_field :email_id, :placeholder => "Email"  %>
   </div>
   <div class="field">
-    <%= f.label :phone_number %><br />
     <%= f.number_field :phone_number, :placeholder => "Phone"  %>
   </div>
   <div class="field">  
@@ -29,7 +26,7 @@
   </div>
   <fieldset class="ui-grid-a">
   	<div class="ui-block-a"><button type="submit" data-theme="c">Cancel</button></div>
-  	<div class="ui-block-b"><%= f.submit %></div>	 
+  	<div class="ui-block-b"><%= f.submit "Book it!" %></div>	 
   </fieldset>
 <% end %>
 
