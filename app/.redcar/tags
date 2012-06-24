@@ -1,0 +1,32 @@
+1340548055
+ApplicationController	/devel/off/ruby/rails/cinejqm/app/controllers/application_controller.rb	class ApplicationController 
+ApplicationHelper	/devel/off/ruby/rails/cinejqm/app/helpers/application_helper.rb	module ApplicationHelper
+Customer	/devel/off/ruby/rails/cinejqm/app/models/customer.rb	class Customer 
+CustomersHelper	/devel/off/ruby/rails/cinejqm/app/helpers/customers_helper.rb	module CustomersHelper
+HomeController	/devel/off/ruby/rails/cinejqm/app/controllers/home_controller.rb	class HomeController 
+HomeHelper	/devel/off/ruby/rails/cinejqm/app/helpers/home_helper.rb	module HomeHelper
+Purchase	/devel/off/ruby/rails/cinejqm/app/models/purchase.rb	class Purchase 
+PurchasesController	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	class PurchasesController 
+PurchasesHelper	/devel/off/ruby/rails/cinejqm/app/helpers/purchases_helper.rb	module PurchasesHelper
+Ticket	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	class Ticket 
+Ticketcount	/devel/off/ruby/rails/cinejqm/app/models/ticketcount.rb	class Ticketcount 
+TicketcountsHelper	/devel/off/ruby/rails/cinejqm/app/helpers/ticketcounts_helper.rb	module TicketcountsHelper
+TicketsHelper	/devel/off/ruby/rails/cinejqm/app/helpers/tickets_helper.rb	module TicketsHelper
+create	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def create
+destroy	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def destroy
+edit	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def edit
+extractLast	/devel/off/ruby/rails/cinejqm/app/assets/javascripts/autocomplete-rails.js	function extractLast( term )
+index	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def index
+index	/devel/off/ruby/rails/cinejqm/app/controllers/home_controller.rb	  def index
+new	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def new
+show	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def show
+split	/devel/off/ruby/rails/cinejqm/app/assets/javascripts/autocomplete-rails.js	function split( val )
+ticket_category	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_category
+ticket_category	/devel/off/ruby/rails/cinejqm/app/models/customer.rb	def ticket_category
+ticket_category=	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_category=(category)
+ticket_category=	/devel/off/ruby/rails/cinejqm/app/models/customer.rb	 def ticket_category=(category)
+ticket_cost	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_cost
+ticket_cost=	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_cost=(cost)
+ticket_count	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_count
+ticket_count=	/devel/off/ruby/rails/cinejqm/app/models/ticket.rb	 def ticket_count=(nooftickets)
+update	/devel/off/ruby/rails/cinejqm/app/controllers/purchases_controller.rb	  def update

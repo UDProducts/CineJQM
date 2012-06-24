@@ -29,6 +29,6 @@ width:180px;
   text-align: center;
 }
 
-img#moive {
-  width: 400px;
+.ui-image {
+  max-width: 400px;
 }
