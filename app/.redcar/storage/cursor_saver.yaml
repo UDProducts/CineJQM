@@ -1,4 +1,31 @@
 --- 
-cursor_positions: []
-
+cursor_positions: 
+  - :path: views/layouts/home.html.erb
+    :cursor_offset: 1206
+    :timestamp: 2012-06-24 19:57:07 +05:30
+  - :path: assets/stylesheets/customers.css
+    :cursor_offset: 417
+    :timestamp: 2012-06-24 19:53:57 +05:30
+  - :path: views/home/movie_two.html.erb
+    :cursor_offset: 209
+    :timestamp: 2012-06-24 19:51:05 +05:30
+    :selection_offset: 226
+    :block_selection_mode: false
+  - :path: views/home/movie_three.html.erb
+    :cursor_offset: 231
+    :timestamp: 2012-06-24 19:51:09 +05:30
+  - :path: views/home/movie_one.html.erb
+    :cursor_offset: 227
+    :timestamp: 2012-06-24 19:51:12 +05:30
+  - :path: views/home/movie_four.html.erb
+    :cursor_offset: 232
+    :timestamp: 2012-06-24 19:51:16 +05:30
+  - :path: views/home/index.html.erb
+    :cursor_offset: 231
+    :timestamp: 2012-06-24 19:51:26 +05:30
+  - :path: assets/stylesheets/jqm.min.css
+    :cursor_offset: 27657
+    :timestamp: 2012-06-22 23:34:13 +05:30
+    :selection_offset: 27660
+    :block_selection_mode: false
 files_to_retain: 0
